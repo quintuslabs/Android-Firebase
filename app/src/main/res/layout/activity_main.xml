@@ -1,19 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Logout"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="onLogoutClicked"/>
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="4dp"
+                app:cardUseCompatPadding="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:weightSum="10">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@drawable/income"
+                            android:scaleType="centerInside" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/income"
+                            android:layout_weight="8"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+             <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="4dp"
+                app:cardUseCompatPadding="true">
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                    >
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:orientation="vertical"
+                         android:layout_centerInParent="true"
+                         android:gravity="center"
+                         android:weightSum="10">
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:layout_height="match_parent"
+                             android:background="@drawable/expense"
+                             android:scaleType="fitCenter"
+                             android:layout_weight="2"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="match_parent"
+                             android:text="@string/expenses"
+                             android:layout_weight="8"/>
+
+                     </LinearLayout>
+                 </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="4dp"
+                app:cardUseCompatPadding="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:weightSum="10">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/todo"
+                            android:scaleType="fitCenter"
+                            android:layout_weight="2"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/todo"
+                            android:layout_weight="8"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+             <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="4dp"
+                app:cardUseCompatPadding="true">
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:orientation="vertical"
+                         android:layout_centerInParent="true"
+                         android:gravity="center"
+                         android:weightSum="10">
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:background="@drawable/profile"
+                             android:scaleType="fitCenter"
+                             android:layout_weight="2"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="match_parent"
+                             android:text="@string/profile"
+                             android:layout_weight="8"/>
+
+                     </LinearLayout>
+                 </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

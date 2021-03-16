@@ -8,4 +8,10 @@
     <string name="existing_user">Existing User? Please Login</string>
     <string name="login">Login</string>
     <string name="new_user">New User? Please Register</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="expenses">Expenses</string>
+    <string name="income">Income</string>
+    <string name="todo">Todo</string>
+    <string name="profile">Profile</string>
 </resources>
