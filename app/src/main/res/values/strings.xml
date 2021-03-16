@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AndroidFirebase</string>
+    <string name="notification_channel_id">10001</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="existing_user">Existing User? Please Login</string>
+    <string name="login">Login</string>
+    <string name="new_user">New User? Please Register</string>
+</resources>
