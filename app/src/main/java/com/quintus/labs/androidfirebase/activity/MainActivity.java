@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
         getFirebaseUser();
-
         getUserData();
 
     }
@@ -80,5 +79,9 @@ public class MainActivity extends AppCompatActivity {
 
         firebaseAuth.signOut();
         getFirebaseUser();
+    }
+
+    public void onProfileClicked(View view) {
+        startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
     }
 }

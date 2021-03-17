@@ -128,7 +128,8 @@
                 android:layout_weight="1"
                 app:cardElevation="4dp"
                 app:cardCornerRadius="4dp"
-                app:cardUseCompatPadding="true">
+                app:cardUseCompatPadding="true"
+                 android:onClick="onProfileClicked">
                  <RelativeLayout
                      android:layout_width="match_parent"
                      android:layout_height="match_parent">
